@@ -56,28 +56,28 @@ $(function () {
       .join("");
   };
 
-  const $slider = $(".testimonial-slider");
+  const $slider = $(".wd-testimonial-slider");
 
   testimonials.forEach((item) => {
     const card = $(`
-      <article class="testimonial-card">
-        <div class="testimonial-card__body">
-          <p class="quote">${item.quote}</p>
-          <div class="person">
+      <article class="wd-testimonial">
+        <div class="wd-testimonial__body">
+          <p class="wd-testimonial__quote">${item.quote}</p>
+          <div class="wd-testimonial__person">
             <div>
-              <p class="person__name">${item.name}</p>
-              <p class="person__source">${item.source}</p>
+              <p class="wd-testimonial__name">${item.name}</p>
+              <p class="wd-testimonial__source">${item.source}</p>
             </div>
-            <div class="rating">
+            <div class="wd-testimonial__rating">
               <span>5 Stars</span>
-              <div class="rating-stars" aria-hidden="true">
+              <div class="wd-testimonial__stars" aria-hidden="true">
                 ${buildStars()}
               </div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card__media">
-          <div class="media-frame">
+        <div class="wd-testimonial__media">
+          <div class="wd-testimonial__frame">
             <img src="${item.imageSrc}" alt="${item.imageAlt}" />
           </div>
         </div>
